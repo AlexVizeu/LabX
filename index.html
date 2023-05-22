@@ -28,27 +28,80 @@
 </header>
 
 <main>
-
+<!--    Apresentação    -->
 <div id="Apresentacao" class="container" style="padding-top:100px;">
 	<h2>Apresentacao</h2>
 	<article>
-    <p>Apaixonados Pelo estilo &quot;Faça Você Mesmo (DIY)&quot; A Lab X busca ser um ponto de encontro para aqueles que se interessam por esse estilo de vida e querem por seus projetos em prática.</p>
+    <p>Apaixonados Pelo estilo &quot;Faça Você Mesmo (DIY)&quot; A <i>Lab X</i> busca ser um ponto de encontro para aqueles que se interessam por esse estilo de vida e querem por seus projetos em prática.</p>
     <p>Veja abaixo alguns de nossos projetos ja colocados em prática</p>
   </article>
 </div>
-
+<!--    Projetos    -->
 <div id="Projetos" class="container" style="padding-top:100px;">
 	<h2>Projetos</h2>
-    <ul style="list-style-type: none;">
-      <li><i class="fa fa-angle-double-right" style="width:30px"></i>CNC Revoluiton 1</li>
-      <li><i class="fa fa-angle-double-right" style="width:30px"></i>Bancada para Tupia</li>
-      <li><i class="fa fa-angle-double-right" style="width:30px"></i>Quadro Route 66</li>
-      <li><i class="fa fa-angle-double-right" style="width:30px"></i>Quadro The Wall</li>
-      <li><i class="fa fa-angle-double-right" style="width:30px"></i>Quadro Lass </li>
-      <li><i class="fa fa-angle-double-right" style="width:30px"></i>Joystick fliper</li>
-      <li><i class="fa fa-angle-double-right" style="width:30px"></i>Apoio celular</li>
-      <li><i class="fa fa-angle-double-right" style="width:30px"></i>Cubo/dado</li>
-    </ul>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openProject(event, 'CNC-Revolution')" id="defaultOpen">
+      <i class="fa fa-angle-double-right" style="width:30px"></i>CNC Revolution 1
+    </button>
+    <button class="tablinks" onclick="openProject(event, 'Bancada-tupia')">
+      <i class="fa fa-angle-double-right" style="width:30px"></i>Bancada para Tupia
+    </button>
+    <button class="tablinks" onclick="openProject(event, 'Q-Route')">
+      <i class="fa fa-angle-double-right" style="width:30px"></i>Quadro Route 66
+    </button>
+    <button class="tablinks" onclick="openProject(event, 'Q-TheWall')">
+      <i class="fa fa-angle-double-right" style="width:30px"></i>Quadro The Wall
+    </button>
+    <button class="tablinks" onclick="openProject(event, 'Q-Lass')">
+      <i class="fa fa-angle-double-right" style="width:30px"></i>Quadro Lass
+    </button>
+    <button class="tablinks" onclick="openProject(event, 'Joy-Fliper')">
+      <i class="fa fa-angle-double-right" style="width:30px"></i>Joystick fliper
+    </button>
+    <button class="tablinks" onclick="openProject(event, 'Apoio-celular')">
+      <i class="fa fa-angle-double-right" style="width:30px"></i>Apoio Celular
+    </button>
+    <button class="tablinks" onclick="openProject(event, 'Cubo')">
+      <i class="fa fa-angle-double-right" style="width:30px"></i>Cubo/Dado
+    </button>
+  </div>
+
+  <div id="CNC-Revolution" class="tabcontent">
+    <h3>CNC Revolution 1</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  <div id="Bancada-tupia" class="tabcontent">
+    <h3>Bancada para a Tupia</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  <div id="Q-Route" class="tabcontent">
+    <h3>Quadro Route 66</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  <div id="Q-TheWall" class="tabcontent">
+    <h3>Quadro The Wall</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  <div id="Q-Lass" class="tabcontent">
+    <h3>Quadro Lass</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  <div id="Joy-Fliper" class="tabcontent">
+    <h3>Joystick fliper</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  <div id="Apoio-celular" class="tabcontent">
+    <h3>Apoio Celular</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  <div id="Cubo" class="tabcontent">
+    <h3>Cubo/Dado</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+
+
+<!--    Inicio Album Fotos    --> 
 
   <ul class="photo">
     <li>
@@ -85,7 +138,7 @@
       <a href="" title="Painel" data-toggle="modal" data-target="#Modal_">
         <img  src="imagens/Fotos/Painel_1.jpg" />
       </a>
-    </li>s
+    </li>
     <li>
       <a href="" title="Tupia" data-toggle="modal" data-target="#Modal_">
         <img  src="imagens/Fotos/Tupia_1.jpg" />
@@ -139,13 +192,13 @@
 
 
 </div>
-
+<!--    Linkd e Parceiros-->
 <div id="Parceiros" class="container" style=" height:500px; padding-top:100px;">
 	<h2>Parceiros e Links</h2>
   <h3>Links:</h3>
   <p>GitHub</p>
 </div>
-
+<!--    Contato    -->
 <div id="Contato" class="container" style=" padding-top:100px; margin-bottom:-11px;">
 	<h2>Contato</h2>
 </div>
@@ -180,6 +233,23 @@
 
 <footer>
 </footer>
-
+<script>
+  function openProject(evt, Project) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(Project).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
 </body>
 </html>
