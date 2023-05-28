@@ -12,26 +12,32 @@ input {color:#000;}
 .container h2{width:100%;  border-bottom:solid 1px #FF0;}
 .container p{padding:5px 30px 0px; text-indent: 10px;}
 			
-	@media screen and (max-width: 767px) {
-      .photo li:nth-child(n+5) {display: none;}
-	}
+@media screen and (max-width: 767px) {
+   .photo li:nth-child(n+7) {display: none;}
+   menu {margin: 0px 10px;}
+   menu li {float: none; margin: 0px;}
+   menu a {Border: none; transition-property: none;}
+   menu a:hover {Border: none;}
+}
 
-    ul.photo li { display: inline; }
-  	ul.photo a { background: #fff; display: inline; filter:grayscale(30%); float: left; margin: 0 0 27px 30px; width: auto; padding: 10px 10px 15px; text-align: center; font-family: 'Nothing You Could Do';font-size: 22px; font-weight: bold; text-decoration: none; color: #333; -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25); -webkit-transform: rotate(-2deg); -webkit-transition: -webkit-transform .15s linear; -moz-transform: rotate(-2deg); }
-    ul.photo li { padding-left: 0;}
-	
-    @media screen and (max-width: 768px) {
-      ul.photo li a { margin-left: 0;}
-    }
-	ul.photo img { display: block; width: 190px; height: 190px; object-fit: cover; margin-bottom: 12px; }
-	ul.photo a:after { content: attr(title); }
-	ul.photo li:nth-child(even) a { -webkit-transform: rotate(2deg);  -moz-transform: rotate(2deg); }
-	ul.photo li:nth-child(3n) a { -webkit-transform: none; position: relative; top: -5px;  -moz-transform: none; }
-	ul.photo li:nth-child(5n) a { -webkit-transform: rotate(5deg); position: relative; right: 5px;  -moz-transform: rotate(5deg); }
-	ul.photo li:nth-child(8n) a { position: relative; right: 5px; top: 8px; }
-	ul.photo li:nth-child(11n) a { position: relative; left: -5px; top: 3px; }
-	ul.photo li.messy a { margin-top: -400px; position: relative; left: 160px; }
-	ul.photo li a:hover {filter: grayscale(0); -webkit-transform: scale(1.25); -moz-transform: scale(1.25); -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5); position: relative; z-index: 5; }
+@media screen and (max-width: 768px) {
+  ul.photo li a { margin-left: 0;}
+}
+
+/* -- Album Fotos -- */
+ul.photo li { display: inline; }
+ul.photo a { background: #fff; display: inline; filter:grayscale(30%); float: left; margin: 0 0 27px 30px; width: auto; padding: 10px 10px 15px; text-align: center; font-family: 'Nothing You Could Do';font-size: 22px; font-weight: bold; text-decoration: none; color: #333; -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25); -webkit-transform: rotate(-2deg); -webkit-transition: -webkit-transform .15s linear; -moz-transform: rotate(-2deg); }
+ul.photo li { padding-left: 0;}
+/* Content */
+ul.photo img { display: block; width: 190px; height: 190px; object-fit: cover; margin-bottom: 12px; }
+ul.photo a:after { content: attr(title); }
+ul.photo li:nth-child(even) a { -webkit-transform: rotate(2deg);  -moz-transform: rotate(2deg); }
+ul.photo li:nth-child(3n) a { -webkit-transform: none; position: relative; top: -5px;  -moz-transform: none; }
+ul.photo li:nth-child(5n) a { -webkit-transform: rotate(5deg); position: relative; right: 5px;  -moz-transform: rotate(5deg); }
+ul.photo li:nth-child(8n) a { position: relative; right: 5px; top: 8px; }
+ul.photo li:nth-child(11n) a { position: relative; left: -5px; top: 3px; }
+ul.photo li.messy a { margin-top: -400px; position: relative; left: 160px; }
+ul.photo li a:hover {filter: grayscale(0); -webkit-transform: scale(1.25); -moz-transform: scale(1.25); -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5); position: relative; z-index: 5; }
 
 
 
