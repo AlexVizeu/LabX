@@ -10,7 +10,8 @@ menu a:hover { border-bottom: 3px solid #FF0; padding: 2px; }
 .modal-title{color:#777;}
 input {color:#000;}
 .container h2{width:100%;  border-bottom:solid 1px #FF0;}
-.container p{padding:5px 30px 0px; text-indent: 10px;}
+.container .par{padding:15px 30px; }
+.container p{padding: 0px; text-indent: 25px;}
 
 * {box-sizing: border-box}
 
