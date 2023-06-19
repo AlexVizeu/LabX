@@ -28,13 +28,13 @@ input {color:#000;}
   .photo li:nth-child(n+7) {display: none;}
    /* Menu */
    #m_icon {float: right; display: block;}
-   menu {margin: 0px 10px;}
-   menu li {float: none; margin: 0px;}
-   menu a {Border: none; transition-property: none;}
-   menu a:hover {Border: none;}
+   .m_menu {margin: 0px 10px; display: none;}
+   .m_menu li {float: none; margin: 0px;}
+   .m_menu a {Border: none; transition-property: none;}
+   .m_menu a:hover {Border: none;}
 
    /* Menu Responsivo*/
-   .m_menu.responsive{float: none;display: block;text-align: left;}
+   .m_menu.responsive{display: block;text-align: left;}
 
    /* Tab Menu (Projetos) */
    .tab button i {display: none;}
