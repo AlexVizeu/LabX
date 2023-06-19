@@ -21,7 +21,7 @@
     <a href="javascript:void(0);" id="m_icon" onclick="HS_Menu()">
       <i class="fa fa-bars"></i>
     </a>
-		<menu id="top_menu">
+		<menu Class="m_menu"id="top_menu">
 			<li><a href="#Apresentacao">Apresentacao</a></h3pli>		
 			<li><a href="#Projetos">Projetos</a></li>
 			<li><a href="#Parceiros">Parceiros</a></li>			
@@ -253,9 +253,18 @@
     document.getElementById(Project).style.display = "block";
     evt.currentTarget.className += " active";
   }
-  
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
+  
+  //Função Menu responsivo (Hide / Show)
+  function HS_Menu() {
+  var x = document.getElementById("top_menu");
+  if (x.className === "m_menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "m_menu";
+  }
+}
 </script>
 </body>
 </html>
