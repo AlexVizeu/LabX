@@ -34,7 +34,7 @@ input {color:#000;}
    .m_menu a:hover {Border: none;}
 
    /* Menu Responsivo*/
-   .m_menu.responsive{display: block;text-align: left;}
+   .m_menu.responsive{display: block;}
 
    /* Tab Menu (Projetos) */
    .tab button i {display: none;}
