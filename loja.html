@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Loja - Lab X - Oficina Maker</title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="scripts/bootstrap/3.3.7/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="scripts/w3css/4/w3.css">
+  <link rel="stylesheet" href="scripts/styles.css">
+  <link rel="icon" href="imagens/favicon.png" type="image/png">
+  <link href='https://fonts.googleapis.com/css?family=Nothing You Could Do' rel='stylesheet'>
+  <script src="scripts/jquery/3.2.1/jquery.min.js"></script>
+  <script src="scripts/bootstrap/3.3.7/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header style="background-image: url('imagens/retina-wood.png');">
+	<div class="container">
+		<img id="m_logo" src="imagens/logo.png"  />
+    <a href="javascript:void(0);" id="m_icon" onclick="HS_Menu()">
+      <i class="fa fa-bars"></i>
+    </a>
+		<menu Class="m_menu"id="top_menu">
+			<li><a href="#Home">Home</a></li>		
+			<li><a href="#Loja">Loja</a></li>		
+			<li><a href="#Contato">Contato</a></li>
+		</menu>
+	</div>
+</header>
+
+<main>
+<!--    Loja    -->
+<div id="Loja" class="container" style="padding-top:100px;">
+	<h2>Loja</h2>
+	<article class="par">
+    <p>Apaixonados Pelo estilo &quot;Faça Você Mesmo (DIY)&quot; A <i>Lab X</i> busca ser um ponto de encontro para aqueles que se interessam por esse estilo de vida e querem por seus projetos em prática.</p>
+    <p>A <i>Lab X</i> é uma oficina que começou na Garagem, com poucos equipamentos e muita vontade de realizar algo novo e inovador. Mesmo com poucos recursos e ferramentas, conseguimos criar alguns projetos mais basicos, inclusive contruir algumas ferramentas, como a bancada para Tupia e a CNC, para nos auxiliar em projetos mais complexos.</p>
+    <p>Desde então, muita coisa vem sendo feita. Veja abaixo alguns de nossos projetos já colocados em prática.</p>
+  </article>
+</div>
+<!--    Contato    -->
+<div id="Contato" class="container" style=" padding-top:100px; margin-bottom:-11px;">
+	<h2 style="margin-bottom: 10px;">Fale Conosco</h2>
+</div>
+<div style="width:100%; background:#0C0D10; border-top:solid 1px #FF0;">
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+ 
+    <p class="w3-opacity w3-center" style="margin:30px;"><i>Formulário não suportado pela Hospedagem.</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Miguel Pereira, RJ<br>
+        <i class="fa fa-phone" style="width:30px"></i> (24) 9 8148 8318<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> avizeu@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/envio.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border w3-border-yellow" type="text" placeholder="Nome" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border w3-border-yellow" type="text" placeholder="e-mail" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border w3-border-yellow" type="text" placeholder="Menssagem" required name="Message">
+          <button class="w3-button w3-black w3-border w3-border-yellow w3-section w3-right w3-hover-white" type="submit">ENVIAR</button>
+        </form>
+      </div>
+    </div>
+  </div>
+	</div>
+</main>
+
+<footer>
+</footer>
+<script>
+  function openProject(evt, Project) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(Project).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  
+  //Função Menu responsivo (Hide / Show)
+  function HS_Menu() {
+  var x = document.getElementById("top_menu");
+  if (x.className === "m_menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "m_menu";
+  }
+}
+</script>
+</body>
+</html>
