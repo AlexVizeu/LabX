@@ -18,9 +18,13 @@
 <header style="background-image: url('imagens/retina-wood.png');">
 	<div class="container">
 		<img id="m_logo" src="imagens/logo.png"  />
-		<menu>
-			<li><a href="#Apresentacao">Apresentacao</a></h3pli>		
+    <a href="javascript:void(0);" id="m_icon" onclick="HS_Menu()">
+      <i class="fa fa-bars"></i>
+    </a>
+		<menu Class="m_menu"id="top_menu">
+			<li><a href="#Apresentacao">Apresentacao</a></li>		
 			<li><a href="#Projetos">Projetos</a></li>
+      <li><a href="#Fotos">Fotos</a></li>
 			<li><a href="#Parceiros">Parceiros</a></li>			
 			<li><a href="#Contato">Contato</a></li>
 		</menu>
@@ -31,14 +35,15 @@
 <!--    Apresentação    -->
 <div id="Apresentacao" class="container" style="padding-top:100px;">
 	<h2>Apresentacao</h2>
-	<article>
+	<article class="par">
     <p>Apaixonados Pelo estilo &quot;Faça Você Mesmo (DIY)&quot; A <i>Lab X</i> busca ser um ponto de encontro para aqueles que se interessam por esse estilo de vida e querem por seus projetos em prática.</p>
-    <p>Veja abaixo alguns de nossos projetos ja colocados em prática</p>
+    <p>A <i>Lab X</i> é uma oficina que começou na Garagem, com poucos equipamentos e muita vontade de realizar algo novo e inovador. Mesmo com poucos recursos e ferramentas, conseguimos criar alguns projetos mais basicos, inclusive contruir algumas ferramentas, como a bancada para Tupia e a CNC, para nos auxiliar em projetos mais complexos.</p>
+    <p>Desde então, muita coisa vem sendo feita. Veja abaixo alguns de nossos projetos já colocados em prática.</p>
   </article>
 </div>
 <!--    Projetos    -->
 <div id="Projetos" class="container" style="padding-top:100px;">
-	<h2>Projetos</h2>
+	<h2>Nossos Projetos</h2>
 
   <div class="tab">
     <button class="tablinks" onclick="openProject(event, 'CNC-Revolution')" id="defaultOpen">
@@ -66,6 +71,7 @@
       <i class="fa fa-angle-double-right" style="width:30px"></i>Cubo/Dado
     </button>
   </div>
+
 
   <div id="CNC-Revolution" class="tabcontent">
     <h3>CNC Revolution 1</h3>
@@ -99,10 +105,12 @@
     <h3>Cubo/Dado</h3>
     <p>Peça feita para testar o maquinário, assim como materiais utilizados na finalização (colas, tinta, entre outros).</p>
   </div>
+</div>
 
+<!--    Album de Fotos    -->
 
-<!--    Inicio Album Fotos    --> 
-
+<div id="Fotos" class="container" style="padding-top:100px;">
+	<h2>Album de Fotos</h2>
   <ul class="photo">
     <li>
       <a href="" title="Route 66" data-toggle="modal" data-target="#Modal_R">
@@ -202,7 +210,7 @@
 </div>
 <!--    Contato    -->
 <div id="Contato" class="container" style=" padding-top:100px; margin-bottom:-11px;">
-	<h2>Contato</h2>
+	<h2 style="margin-bottom: 10px;">Fale Conosco</h2>
 </div>
 <div style="width:100%; background:#0C0D10; border-top:solid 1px #FF0;">
 <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
@@ -249,9 +257,18 @@
     document.getElementById(Project).style.display = "block";
     evt.currentTarget.className += " active";
   }
-  
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
+  
+  //Função Menu responsivo (Hide / Show)
+  function HS_Menu() {
+  var x = document.getElementById("top_menu");
+  if (x.className === "m_menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "m_menu";
+  }
+}
 </script>
 </body>
 </html>
