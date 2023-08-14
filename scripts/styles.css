@@ -13,11 +13,9 @@ input {color:#000;}
 .container h2{width:100%;  border-bottom:solid 1px #FF0; margin-bottom:20px; }
 .container .par{padding:15px 30px; }
 .container p{padding: 0px; text-indent: 25px;}
-#WA_Link{display:block; background: #FFF; width: 230px; height: 33px; border: solid 3px rgb(33, 179, 14); border-radius: 15px; margin-left: -10px; color: #000;}
+#WA_Link{display:block; background: #FFF; width: 230px; height: 33px; border: solid 3px #21b30e; border-radius: 15px; margin-left: -10px; color: #000;}
 #WA_Link img{margin:2px 15px 4px 8px;}
-#WA_Link :hover{background: #777;}
-
-
+#WA_Link:hover{background: #a7f79b;border: solid 3px #FFF}
 * {box-sizing: border-box}
 
 /* Tab Menu (Projetos) */
